@@ -36,11 +36,12 @@ print(type(new_text), new_text)
 low_text = list(map(str.lower, new_text))
 print(low_text)
 # лемматизация
-'''morph = pymorphy2.MorphAnalyzer()
+morph = pymorphy2.MorphAnalyzer()
+lemma_text = []
 for i in low_text:
     p = morph.parse(i)[0]
-    low_text.append(p.normal_form)
-print(low_text)''' #зависает на этом месте, что делать?
+    lemma_text.append(p.normal_form)
+print(lemma_text)
 
 
 
