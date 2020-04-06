@@ -58,6 +58,6 @@ print(sort_list)
 sort_list.reverse()
 print(sort_list[:5])
 
-set_text = set(text)
+set_text = set(low_text)
 print(len(set_text))
 
